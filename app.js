@@ -46,7 +46,7 @@ app.use("/expense", expenseRouter);
 
 app.use("/purchase", purchaseMembershipRouter);
 
-// app.use("/premium", leaderboardRouter);
+app.use("/premium", leaderboardRouter);
 
 app.use("/password", resetPasswordRouter);
 
