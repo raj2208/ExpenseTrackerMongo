@@ -87,7 +87,7 @@ async function getAllExpenses() {
       { headers: { Authorization: token } }
     );
     res.data.expenses.forEach((expenses) => {
-      const id = expenses.id;
+      const id = expenses._id;
       const date = expenses.date;
       const categoryValue = expenses.category;
       const descriptionValue = expenses.description;
@@ -170,7 +170,7 @@ async function paginationBtn(e) {
     table.innerHTML = "";
 
     res.data.expenses.forEach((expenses) => {
-      const id = expenses.id;
+      const id = expenses._id;
       const date = expenses.date;
       const categoryValue = expenses.category;
       const descriptionValue = expenses.description;
@@ -259,7 +259,7 @@ async function editExpense(e) {
         { headers: { Authorization: token } }
       );
       res.data.forEach((expense) => {
-        if (expense.id == id) {
+        if (expense._id == id) {
           categoryValue.textContent = expense.category;
           descriptionValue.value = expense.description;
           amountValue.value = expense.amount;

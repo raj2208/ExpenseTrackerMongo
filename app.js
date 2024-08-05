@@ -41,8 +41,8 @@ app.use(bodyParser.json());
 app.use("/", userRouter);
 app.use("/user", userRouter);
 
-// app.use("/homePage", expenseRouter);
-// app.use("/expense", expenseRouter);
+app.use("/homePage", expenseRouter);
+app.use("/expense", expenseRouter);
 
 // app.use("/purchase", purchaseMembershipRouter);
 
