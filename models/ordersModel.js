@@ -1,7 +1,30 @@
-const Sequelize = require("sequelize");
-const sequelize = require("../util/database");
+const mongoose = require("mongoose");
 
-//id, name , password, phone number, role
+const OrderSchema = new mongoose.Schema({
+  paymentId: {
+    type: String,
+  },
+  orderId: {
+    type: String,
+    required: true,
+  },
+  status: {
+    type: String,
+    required: true,
+  },
+  userId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User",
+    required: true,
+  },
+});
+
+const Order = mongoose.model("Order", OrderSchema);
+
+module.exports = Order;
+
+/* const Sequelize = require("sequelize");
+const sequelize = require("../util/database");
 
 const Order = sequelize.define("order", {
   id: {
@@ -16,3 +39,4 @@ const Order = sequelize.define("order", {
 });
 
 module.exports = Order;
+ */
