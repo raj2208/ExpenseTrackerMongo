@@ -1,4 +1,4 @@
-const express = require("express");
+/* const express = require("express");
 
 const purchaseMembershipController = require("../controllers/purchaseMembershipController");
 
@@ -19,3 +19,4 @@ router.post(
 );
 
 module.exports = router;
+ */

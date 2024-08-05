@@ -41,16 +41,16 @@ app.use(bodyParser.json());
 app.use("/", userRouter);
 app.use("/user", userRouter);
 
-app.use("/homePage", expenseRouter);
-app.use("/expense", expenseRouter);
+// app.use("/homePage", expenseRouter);
+// app.use("/expense", expenseRouter);
 
-app.use("/purchase", purchaseMembershipRouter);
+// app.use("/purchase", purchaseMembershipRouter);
 
-app.use("/premium", leaderboardRouter);
+// app.use("/premium", leaderboardRouter);
 
 app.use("/password", resetPasswordRouter);
 
-app.use("/reports", reportsRouter);
+// app.use("/reports", reportsRouter);
 
 // User.hasMany(Expense);
 // Expense.belongsTo(User);

@@ -1,4 +1,4 @@
-const express = require("express");
+/* const express = require("express");
 const router = express.Router();
 const expenseController = require("../controllers/expenseController");
 const userAuthentication = require("../middleware/auth");
@@ -30,3 +30,4 @@ router.post(
 );
 
 module.exports = router;
+ */
