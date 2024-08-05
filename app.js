@@ -50,7 +50,7 @@ app.use("/purchase", purchaseMembershipRouter);
 
 app.use("/password", resetPasswordRouter);
 
-// app.use("/reports", reportsRouter);
+app.use("/reports", reportsRouter);
 
 // User.hasMany(Expense);
 // Expense.belongsTo(User);
